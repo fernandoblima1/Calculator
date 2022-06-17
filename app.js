@@ -80,6 +80,7 @@ function newCalculator(){
 
         clickButtons(){
             document.addEventListener('touchend', function(e){
+                console.log(e);
                 const el = e.target;
                 if(el.classList.contains('btn')){
                     //Get the value of the button and put it in input
